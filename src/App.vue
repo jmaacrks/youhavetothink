@@ -36,8 +36,29 @@
           You Got Through {{stage}} Questions!
           </h1>
           </v-container>
-      
+    
+    
     </v-main>
+    <v-container justify-left v-if="isMuted">
+            <v-btn 
+              large
+              icon
+              color="cyan lighten-1"
+              @click="toggleMute"
+            >
+              <v-icon>mdi-music-note-off-outline</v-icon>
+            </v-btn>
+    </v-container>
+    <v-container v-if="!isMuted">
+    <v-btn
+              large
+              icon
+              color="cyan lighten-1"
+              @click="toggleMute"
+            >
+              <v-icon>mdi-music-note-outline</v-icon>
+            </v-btn>
+      </v-container>
     <!-- <v-container justify-center>
     <v-btn
           elevation=5
@@ -70,7 +91,7 @@ export default {
     gameMusic: new Audio(game),
     currentSong: new Audio(lobby),
     wooshTrans: new Audio(woosh),
-    didRun: "NO"
+    isMuted: true,
   }),
   components: {
     InputForm,
@@ -108,14 +129,22 @@ export default {
         var audio = sound;
         audio.pause();
       }
-    }
-  },
+      },
+      toggleMute(){
+        if(this.isMuted){
+          this.playSound(this.currentSong);
+        }
+        else{
+          this.stopSound(this.currentSong);
+        }
+        this.isMuted = !this.isMuted;
+      }
+    },
   mounted: function () {
-      playSound(this.lobbyMusic);
       this.currentSong = this.lobbyMusic;
       this.lobbyMusic.loop = true;
       this.gameMusic.loop = true;
-      this.didRun= "YES";
+      this.toggleMute();
   
   }
 }
