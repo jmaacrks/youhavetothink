@@ -11,6 +11,7 @@
       >
       <h1 class= "text-button" align="center">YOU HAVE TO TH.INK</h1>
       </v-banner>
+      {{didRun}}
       
   </v-container>
     <br>
@@ -69,6 +70,7 @@ export default {
     gameMusic: new Audio(game),
     currentSong: new Audio(lobby),
     wooshTrans: new Audio(woosh),
+    didRun: "NO"
   }),
   components: {
     InputForm,
@@ -111,10 +113,9 @@ export default {
   mounted: function () {
       this.currentSong = this.lobbyMusic;
       this.lobbyMusic.loop = true;
-      this.lobbyMusic.autoplay = true;
       this.gameMusic.loop = true;
-      this.currentSong.loop = true;
       this.playSound(this.lobbyMusic);
+      this.didRun= "YES";
   
   }
 }
