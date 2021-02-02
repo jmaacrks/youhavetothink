@@ -25,14 +25,19 @@
         <v-container v-if="stage > 0">
           <timer
             @time-up="timeUp"
+            @tick-clock="tickClock"
             />
          </v-container>
-        
         </v-container>
 
-        <v-container v-else>
+        <v-container v-else-if="!tooFast&&finish">
         <h1 class="overline-xl" align="center">
           You Got Through {{stage}} Questions!
+          </h1>
+          </v-container>
+        <v-container v-else-if="tooFast&&finish">
+          <h1 class="overline-xl" align="center">
+          Wow! You Got Through All The Questions in {{minutes}}:{{seconds}}!
           </h1>
           </v-container>
     
@@ -50,7 +55,6 @@
       max-height="150"
       transition="scale-transition"
       color="cyan lighten-1"
-
     >
       Unmute Music!
     </v-alert>
@@ -77,17 +81,6 @@
             </v-btn>
       </v-container>
     </v-container>
-    <!-- <v-container justify-center>
-    <v-btn
-          elevation=5
-          color="cyan lighten-1"
-          large
-          class="mr-4"
-    @click="stopSound(this.currentSong)"
-    >
-    Pause Music
-    </v-btn>
-    </v-container> -->
   </v-app>
 </template>
 
@@ -116,6 +109,10 @@ export default {
     isMuted: true,
     timeOut: 2000,
     alert: true,
+    tooFast: false,
+    currentTime: 0,
+    minutes: 0,
+    seconds: 0,
   }),
   components: {
     InputForm,
@@ -134,7 +131,11 @@ export default {
       }
       this.currentSong = this.gameMusic
       }
-    },
+      if(this.stage == this.questions.length){
+        this.finish= true;
+        this.tooFast=true;
+      }
+      },
     timeUp(){
       this.finish=!this.finish
       if(!this.isMuted){
@@ -145,6 +146,13 @@ export default {
       },1500)
       }
       this.currentSong = this.lobbyMusic
+    },
+    tickClock(){
+      if(!this.finish){
+      this.currentTime = this.currentTime + .01;
+      this.minutes = Math.floor(this.currentTime/60);
+      this.seconds =Math.round( this.currentTime - (this.minutes * 60));
+      }
     },
     playSound (sound) {
       if(sound) {

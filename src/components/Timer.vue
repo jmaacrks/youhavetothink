@@ -31,7 +31,7 @@ style= "padding: 15px 25px">
                     if (value > 0) {
                         setTimeout(() => {
                             this.timerCount= this.timerCount - (1/this.seconds);
-                            
+                            this.$emit('tick-clock')
                         }, 10);
                         
                     } else { 
