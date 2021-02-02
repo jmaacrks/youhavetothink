@@ -74,7 +74,7 @@ export default {
     InputForm,
     Timer,
   },
-  created: function() {
+  mounted: function() {
       this.playSound(this.lobbyMusic);
       this.currentSong = this.lobbyMusic;
       this.lobbyMusic.loop = true;
