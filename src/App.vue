@@ -111,12 +111,16 @@ export default {
     }
   },
   mounted: function () {
+      newFunction();
       this.currentSong = this.lobbyMusic;
       this.lobbyMusic.loop = true;
       this.gameMusic.loop = true;
-      this.playSound(this.lobbyMusic);
       this.didRun= "YES";
   
   }
 }
+
+  function newFunction() {
+    this.playSound(this.lobbyMusic);
+  }
 </script>
