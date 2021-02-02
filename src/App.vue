@@ -39,7 +39,20 @@
     
     
     </v-main>
-    <v-container justify-left v-if="isMuted">
+    <v-container>
+      <v-alert
+      dense
+      type="info"
+      icon="mdi-music-note-outline"
+      dismissible
+      roundable
+      max-width="250"
+      max-height="150"
+
+    >
+      Unmute Music!
+    </v-alert>
+      <v-container justify-left v-if="isMuted">
             <v-btn 
               large
               icon
@@ -59,6 +72,7 @@
               <v-icon>mdi-music-note-outline</v-icon>
             </v-btn>
       </v-container>
+    </v-container>
     <!-- <v-container justify-center>
     <v-btn
           elevation=5
@@ -92,6 +106,8 @@ export default {
     currentSong: new Audio(lobby),
     wooshTrans: new Audio(woosh),
     isMuted: true,
+    timeOut: 2000,
+    muteNotif: true,
   }),
   components: {
     InputForm,
@@ -101,21 +117,25 @@ export default {
     startGame(){
       this.stage = this.stage + 1
       if (this.stage < 2) {
+      if(!this.isMuted){
       this.stopSound(this.lobbyMusic)
       this.playSound(this.wooshTrans)
       setTimeout(() =>  {
         this.playSound(this.gameMusic);
       },1500)
+      }
       this.currentSong = this.gameMusic
       }
     },
     timeUp(){
       this.finish=!this.finish
+      if(!this.isMuted){
       this.stopSound(this.gameMusic)
       this.playSound(this.wooshTrans)
       setTimeout(() =>  {
       this.playSound(this.lobbyMusic);
       },1500)
+      }
       this.currentSong = this.lobbyMusic
     },
     playSound (sound) {
@@ -144,7 +164,6 @@ export default {
       this.currentSong = this.lobbyMusic;
       this.lobbyMusic.loop = true;
       this.gameMusic.loop = true;
-      this.toggleMute();
   
   }
 }
