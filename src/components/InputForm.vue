@@ -11,7 +11,7 @@
       >
       <div>
         <v-layout justify-center>
-        <h1 class="overline-xl">{{question}}  </h1>
+        <h1 class="overline-xl"> {{question}}  </h1>
         </v-layout>
         <br>
        
