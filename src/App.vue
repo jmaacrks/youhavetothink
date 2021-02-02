@@ -41,6 +41,7 @@
     </v-main>
     <v-container>
       <v-alert
+      :value="alert"
       dense
       type="info"
       icon="mdi-music-note-outline"
@@ -48,6 +49,8 @@
       roundable
       max-width="250"
       max-height="150"
+      transition="scale-transition"
+      color="cyan lighten-1"
 
     >
       Unmute Music!
@@ -57,7 +60,7 @@
               large
               icon
               color="cyan lighten-1"
-              @click="toggleMute"
+              @click="toggleMute(); alert=false;"    
             >
               <v-icon>mdi-music-note-off-outline</v-icon>
             </v-btn>
@@ -107,7 +110,7 @@ export default {
     wooshTrans: new Audio(woosh),
     isMuted: true,
     timeOut: 2000,
-    muteNotif: true,
+    alert: true,
   }),
   components: {
     InputForm,
