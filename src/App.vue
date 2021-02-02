@@ -74,7 +74,7 @@ export default {
     InputForm,
     Timer,
   },
-  mounted: function() {
+  mounted () {
       this.playSound(this.lobbyMusic);
       this.currentSong = this.lobbyMusic;
       this.lobbyMusic.loop = true;
@@ -92,8 +92,6 @@ export default {
       },1500)
       this.currentSong = this.gameMusic
       }
-
-
     },
     timeUp(){
       this.finish=!this.finish
