@@ -180,8 +180,8 @@ export default {
       this.currentSong = this.lobbyMusic;
       this.lobbyMusic.loop = true;
       this.gameMusic.loop = true;
-      this.lobbyMusic.volume = .3;
-      this.gameMusic.volume = .3;
+      this.lobbyMusic.volume = .2;
+      this.gameMusic.volume = .2;
   
   }
 }
