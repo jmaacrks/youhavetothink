@@ -111,7 +111,7 @@ export default {
     }
   },
   mounted: function () {
-      newFunction();
+      playSound(this.lobbyMusic);
       this.currentSong = this.lobbyMusic;
       this.lobbyMusic.loop = true;
       this.gameMusic.loop = true;
@@ -119,8 +119,4 @@ export default {
   
   }
 }
-
-  function newFunction() {
-    this.playSound(this.lobbyMusic);
-  }
 </script>
