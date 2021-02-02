@@ -74,13 +74,6 @@ export default {
     InputForm,
     Timer,
   },
-  mounted () {
-      this.playSound(this.lobbyMusic);
-      this.currentSong = this.lobbyMusic;
-      this.lobbyMusic.loop = true;
-      this.gameMusic.loop = true;
-      this.currentSong.loop = true;
-  },
   methods: {
     startGame(){
       this.stage = this.stage + 1
@@ -114,7 +107,14 @@ export default {
         audio.pause();
       }
     }
+  },
+  mounted: function () {
+      this.playSound(this.lobbyMusic);
+      this.currentSong = this.lobbyMusic;
+      this.lobbyMusic.loop = true;
+      this.gameMusic.loop = true;
+      this.currentSong.loop = true;
+  
   }
-  }
+}
 </script>
-<style>
