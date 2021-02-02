@@ -112,6 +112,7 @@ export default {
       this.playSound(this.lobbyMusic);
       this.currentSong = this.lobbyMusic;
       this.lobbyMusic.loop = true;
+      this.lobbyMusic.autoplay = true;
       this.gameMusic.loop = true;
       this.currentSong.loop = true;
   
