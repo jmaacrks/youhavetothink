@@ -1,29 +1,24 @@
-# Vue Basic
+# puzzles
 
 ## Project setup
-
-```bash
-npm install
+```
+yarn install
 ```
 
 ### Compiles and hot-reloads for development
-
-```bash
-npm run serve
+```
+yarn serve
 ```
 
 ### Compiles and minifies for production
-
-```bash
-npm run build
+```
+yarn build
 ```
 
 ### Lints and fixes files
-
-```bash
-npm run lint
+```
+yarn lint
 ```
 
 ### Customize configuration
-
 See [Configuration Reference](https://cli.vuejs.org/config/).
