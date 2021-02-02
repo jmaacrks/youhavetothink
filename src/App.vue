@@ -60,7 +60,8 @@
               large
               icon
               color="cyan lighten-1"
-              @click="toggleMute(); alert=false;"    
+              @click="toggleMute(); alert=false;"  
+              @touch="toggleMute(); alert=false;"  
             >
               <v-icon>mdi-music-note-off-outline</v-icon>
             </v-btn>
@@ -71,6 +72,7 @@
               icon
               color="cyan lighten-1"
               @click="toggleMute"
+              @touch="toggleMute"
             >
               <v-icon>mdi-music-note-outline</v-icon>
             </v-btn>
@@ -100,9 +102,9 @@ export default {
   name: 'app',
   data: () => ({
     stage: 0,
-    ans: ["Chocolate", "13","Djibouti","Appa","43.4, 110.7", "2009", "Comoros", "Papagei", "1911196", "Valiant Lady"],
+    ans: ["Chocolate", "13","Djibouti","Appa","43.5, 110.8", "2009", "Comoros", "Papagei", "1911196", "Valiant Lady"],
     questions: ["Password", "What is the Square Root of 169","Capital of Djibouti", "Avatar Aangs Sky Bison",  "What are the Coordinates of Jackson, Wyoming ", "What Year Did Rihanna Release 'Rude Boy'?", "Small Island Nation inbetween Madagascar and Mozambique beggining with the Letter 'C'", "ببغاء في اللغة الألمانية", "Distance from Earth to the Moon in Furlongs", "American Soap Opera premiering October 12th, 1953",  ],
-    hints:["Today's Password","Whole Number", "Name of City", "One Word", "Format: 00.0, 00.0", "2XXX", "One Word", "Hint: Translate", "Round to Whole Number", "Two Words"],
+    hints:["Today's Password","Whole Number", "Name of City", "One Word", "Format: 00.0, 00.0 rounding up", "2XXX", "One Word", "Hint: Translate", "Round to Whole Number", "Two Words"],
     finish: false,
     lobbyMusic: new Audio(lobby),
     gameMusic: new Audio(game),
