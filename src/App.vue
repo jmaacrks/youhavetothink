@@ -18,9 +18,8 @@
       <v-container v-if="!finish">
         <input-form 
           @correct-pw="startGame"
-          :answer="ans[stage]"
-          :question="questions[stage]"
-          :hint="hints[stage]"
+          :questions = stages[this.stage]
+          :stage= this.stage
         />
         <v-container v-if="stage > 0">
           <timer
@@ -90,17 +89,12 @@ const game =require("@/assets/game.mp3");
 const woosh=require("@/assets/woosh.wav");
 import InputForm from '@/components/InputForm.vue'
 import Timer from '@/components/Timer.vue'
+import stages from '@/assets/prompts.json'
 export default {
   name: 'app',
   data: () => ({
     stage: 0,
-    ans: ["Chocolate", "13","Djibouti","Appa","32","Vici","43.5, 110.8", "2009", "Comoros", "Papagei", "1911200", "Valiant Lady","Hartford Courant","74","Green","H","1865","Ashikaga Yoshimasa","186","Buddhism"],
-    
-    questions: ["Password", "Square Root of 169","Capital of Djibouti", "Avatar Aangs Sky Bison", "Number of Level in Original Super Mario Bros", "Veni, Vidi, ...", "Coordinates of Jackson, Wyoming ", "Year Rihanna Released 'Rude Boy'", "Small Island Nation inbetween Madagascar and Mozambique beggining with the Letter 'C'",
-     "كلمة ألمانية للببغاء", "Distance from Earth to the Moon in Furlongs", "American Soap Opera Premiering October 12th, 1953","4f6c6465737420436f6e74696e756f75736c79205075626c6973686564204e657773706170657220696e20746865205553","Number day of the Ides of March in Roman Calendar","Central Color of Kenyan Flag on the day of JFKs Assassination","Predominent Element in Atmosphere of Eigth Planet from the Sun",
-     "Year that the School, the Architect of the Eifel Tower, Graduated From was Founded","Japanese Shogun the Year of The Fall of the Byzantine Empire","Time Between end of American Revolution and American Moon Landing","State Religion Declared by China in the Year Equal to the Number of Stairs in Qutub Minar"],
-
-    hints:["Today's Password","Whole Number", "Name of City", "One Word", "Number","Finish the Sequence", "Format: 00.0, 00.0 Rounding Up", "2XXX", "One Word", "Hint: Translate", "Convert Miles -> Furlongs Round to Hundreds", "Two Words","Triple Click Hex to ASCII","2-Digit Number","Name of Color","Atomic Symbol","4-Digit Year","The Shogun, NOT the Emporer","In Years","Year is in Common Era"],
+    stages,
     finish: false,
     lobbyMusic: new Audio(lobby),
     gameMusic: new Audio(game),
@@ -113,6 +107,7 @@ export default {
     currentTime: 0,
     minutes: 0,
     seconds: 0,
+    
   }),
   components: {
     InputForm,
@@ -121,20 +116,21 @@ export default {
   methods: {
     startGame(){
       this.stage = this.stage + 1
-      if (this.stage < 2) {
-      if(!this.isMuted){
-      this.stopSound(this.lobbyMusic)
-      this.playSound(this.wooshTrans)
-      setTimeout(() =>  {
-        this.playSound(this.gameMusic);
-      },1500)
-      }
-      this.currentSong = this.gameMusic
-      }
-      if(this.stage == this.questions.length){
-        this.finish= true;
-        this.tooFast=true;
-      }
+     
+        if (this.stage < 2) {
+            if(!this.isMuted){
+            this.stopSound(this.lobbyMusic)
+            this.playSound(this.wooshTrans)
+              setTimeout(() =>  {
+              this.playSound(this.gameMusic);
+            },1500)
+          }
+          this.currentSong = this.gameMusic
+          }
+            if(this.stage == this.stages.length){
+              this.finish= true;
+              this.tooFast=true;
+          }
       },
     timeUp(){
       this.finish=!this.finish
@@ -175,14 +171,13 @@ export default {
         }
         this.isMuted = !this.isMuted;
       }
-    },
+ },
   mounted: function () {
       this.currentSong = this.lobbyMusic;
       this.lobbyMusic.loop = true;
       this.gameMusic.loop = true;
       this.lobbyMusic.volume = .2;
       this.gameMusic.volume = .2;
-  
   }
 }
 </script>

@@ -11,14 +11,14 @@
       >
       <div>
         <v-layout justify-center>
-        <h1 class="overline-xl"> {{question}}  </h1>
+        <h1 class="overline-xl"> {{this.questions.prompt}}  </h1>
         </v-layout>
         <br>
        
       <v-container>
         <v-text-field
           v-model="word"
-          :hint= this.hint
+          :hint= this.questions.hint
           background-color= "#9575"
           persistent-hint
           >
@@ -74,9 +74,8 @@ const regex = /[!"#$%&'()*+, -./:;<=>?@[\]^_`{|}~]/g;
   export default {
     name: 'input-form',
     props: {
-      answer: String,
-      question: String,
-      hint: String,
+      questions: Object,
+      stage: Number,
     },
     data: () => ({
       valid: false,
@@ -91,7 +90,7 @@ const regex = /[!"#$%&'()*+, -./:;<=>?@[\]^_`{|}~]/g;
     }),
     methods: {
       validate(){
-        if(this.word.toUpperCase().replace(regex, '') == this.answer.toUpperCase().replace(regex,'')){
+        if(this.word.toUpperCase().replace(regex, '') == this.questions.answer.toUpperCase().replace(regex,'')){
           this.$emit('correct-pw', 1)
           this.right = true
           this.word = ''
@@ -108,11 +107,6 @@ const regex = /[!"#$%&'()*+, -./:;<=>?@[\]^_`{|}~]/g;
         audio.play();
       }
       },
-    computed: {
-      Rules: function() {
-        return [v => v == this.answer]
-      }
-    }
     }
   }
 

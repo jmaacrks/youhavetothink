@@ -1,0 +1,107 @@
+[
+    {
+        "prompt": "Number of Stripes in American Flag",
+        "answer": "13",
+        "hint": "Same as the number of colonies"
+    },
+    {
+        "prompt": "Capital City of Vermont",
+        "answer": "Montpelier",
+        "hint": "French Name"
+    },
+    {
+        "prompt": "Area of Manhatten",
+        "answer": "22.82",
+        "hint": "in sq mi, no units in answer"
+    },
+    {
+        "prompt": "Tennesee State Bird",
+        "answer": "Northern Mockingbird",
+        "hint": "Songbird"
+    },
+    {
+        "prompt": "nkezi ugwu nke tibet",
+        "answer": "4,380",
+        "hint": "In Meters"
+    },
+    {
+        "prompt": "Primary Language of Southern Switzerland",
+        "answer": "Italian",
+        "hint": "Makes up 8.2% of National Langueage"
+    },
+    {
+        "prompt": "East-West Highway that connects Melbourne and Longford in Victoria, Australia",
+        "answer": "A440",
+        "hint": "Starts with 'A'"
+    },
+    {
+        "prompt": "How Many Cubic Inches are in a Standard 5.3L Engine from Chevrolet",
+        "answer": "325",
+        "hint": "No unit in answer"
+    },
+    {
+        "prompt": "Temperature that Chicken need to be Cooked to in Order to be Deemed Safe to Eat",
+        "answer": "165",
+        "hint": "Poultry, not Ground"
+    },
+    {
+        "prompt": "Steely Dans 1974 Studio Album",
+        "answer": "Pretzel Logic",
+        "hint": "Auntie Annes"
+    },
+    {
+        "prompt": "Brazilian Airforce Fighter Jet",
+        "answer": "F-5EM Tiger II",
+        "hint": "Made By Swiss Company Northrop"
+    },
+    {
+        "prompt": "Sustained Windspeed of Violent Typhoon",
+        "answer": "54",
+        "hint": "Minimum Sustained Speed in m/s"
+    },
+    {
+        "prompt": "Martian Atmospheric Pressure in standard atmospheres",
+        "answer": "0.0065",
+        "hint": "Rounded to 10 Thousandths"
+    },
+    {
+        "prompt": "Third Ingredient in Redbull",
+        "answer": "Glucose",
+        "hint": "Look for Nutrition Facts"
+    },
+    {
+        "prompt": "British Thermal Units in a Big Mac",
+        "answer": "2.23",
+        "hint": "Round to the Hundreths, convert kcal to btu"
+    },
+    {
+        "prompt": "Translation for the Type of Cards Nintendo Originally Made",
+        "answer": "Flower Cards",
+        "hint": "Include the word 'Cards' in your Answer"
+    },
+    {
+        "prompt": "16th Presidents Assassiniation Date In Mayan Calander",
+        "answer": "12.12.10.2.19",
+        "hint": "Long Count Date"
+    },
+    {
+        "prompt": "Resting Place of 23rd President",
+        "answer": "Crown Hill",
+        "hint": "Do not include 'Cemetary' in your Answer"
+    },
+    {
+        "prompt": "Leader of Uat-Ur Civilization Who Created a Canal to the Red Sea",
+        "answer": "Darius I",
+        "hint": "Include Suffix"
+    },
+    {
+        "prompt": "Substance Sown After Punic Wars",
+        "answer": "NaCL",
+        "hint": "Chemical Formula"
+    },
+    {
+        "prompt": "Process of Binding Faces of the 1896 Invention of Carl Edvard Johansson",
+        "answer": "Wringing",
+        "hint": "Includes 'ing'"
+    }
+]
