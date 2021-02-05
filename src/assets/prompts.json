@@ -16,8 +16,8 @@
     },
     {
         "prompt": "Area of Manhatten",
-        "answer": "22.82",
-        "hint": "in sq mi, no units in answer"
+        "answer": "23",
+        "hint": "in sq mi, no units in answer, round to whole"
     },
     {
         "prompt": "Tennesee State Bird",
@@ -25,9 +25,9 @@
         "hint": "Songbird"
     },
     {
-        "prompt": "nkezi ugwu nke tibet",
+        "prompt": "nkezi elu nke tibet",
         "answer": "4,380",
-        "hint": "In Meters"
+        "hint": "Translate, Unites In Meters"
     },
     {
         "prompt": "Primary Language of Southern Switzerland",
@@ -53,11 +53,6 @@
         "prompt": "Steely Dans 1974 Studio Album",
         "answer": "Pretzel Logic",
         "hint": "Auntie Annes"
-    },
-    {
-        "prompt": "Brazilian Airforce Fighter Jet",
-        "answer": "F-5EM Tiger II",
-        "hint": "Made By Swiss Company Northrop"
     },
     {
         "prompt": "Sustained Windspeed of Violent Typhoon",
