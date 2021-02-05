@@ -1,5 +1,10 @@
 [
     {
+        "prompt": "This Weeks Password",
+        "answer": "Garfield",
+        "hint": "Loves Lasagna"
+    },
+    {
         "prompt": "Number of Stripes in American Flag",
         "answer": "13",
         "hint": "Same as the number of colonies"
