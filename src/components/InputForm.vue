@@ -33,6 +33,15 @@
           >
           Submit
           </v-btn>
+          <v-btn
+          elevation=5
+          color="cyan lighten-1"
+          large
+          class="mr-4"
+          @click="skip()"
+          >
+          Skip! ({{skips}})
+          </v-btn>
           </v-layout>
           <br>
       <div>
@@ -86,6 +95,7 @@ const regex = /[!"#$%&'()*+, -./:;<=>?@[\]^_`{|}~]/g;
       timeout: 2000,
       success: '',
       incorrect: '',
+      skips: 2,
       
     }),
     methods: {
@@ -107,6 +117,19 @@ const regex = /[!"#$%&'()*+, -./:;<=>?@[\]^_`{|}~]/g;
         audio.play();
       }
       },
+      skip(){
+        if(this.skips>0 && this.stage>0){
+        this.$emit('correct-pw',1)
+        this.right = true
+        this.word = ''
+        this.playSound(success)
+        this.skips--
+        }else {
+        this.wrong = true
+        this.word= null
+        this.playSound(incorrect)
+        }
+      }
     }
   }
 
