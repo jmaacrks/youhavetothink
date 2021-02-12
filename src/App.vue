@@ -18,6 +18,7 @@
       <v-container v-if="!finish">
         <input-form 
           @correct-pw="startGame"
+          @skip="skipped"
           :questions = stages[this.stage]
           :stage= this.stage
         />
@@ -31,12 +32,12 @@
 
         <v-container v-else-if="!tooFast&&finish">
         <h1 class="overline-xl" align="center">
-          You Got Through {{stage}} Questions!
+          You Got Through {{stage}} Questions! Using {{skipped}} Skips!
           </h1>
           </v-container>
         <v-container v-else-if="tooFast&&finish">
           <h1 class="overline-xl" align="center">
-          Wow! You Got Through All The Questions in {{minutes}}:{{seconds}}!
+          Wow! You Got Through All The Questions in {{minutes}}:{{seconds}}! Using {{skipped}} Skips!
           </h1>
           </v-container>
     
@@ -107,6 +108,7 @@ export default {
     currentTime: 0,
     minutes: 0,
     seconds: 0,
+    skipped:'',
     
   }),
   components: {
@@ -170,6 +172,9 @@ export default {
           this.stopSound(this.currentSong);
         }
         this.isMuted = !this.isMuted;
+      },
+      skipped(){
+        this.skipped++
       }
  },
   mounted: function () {

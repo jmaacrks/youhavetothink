@@ -123,6 +123,7 @@ const regex = /[!"#$%&'()*+, -./:;<=>?@[\]^_`{|}~]/g;
       },
       skip(){
         if(this.skips>0 && this.stage>0){
+        this.$emit('skip')
         this.$emit('correct-pw',1)
         this.continue = "Skipped!"
         this.right = true
