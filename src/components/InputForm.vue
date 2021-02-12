@@ -53,7 +53,7 @@
             rounded
             :timemout="timeout"
             >
-            <h1 class="overline-xl" align="center"> Correct! </h1>
+            <h1 class="overline-xl" align="center"> {{this.continue}} </h1>
             </v-snackbar>
           </div>
             <div>
@@ -65,7 +65,7 @@
             rounded
             :timemout="timeout"
             >
-            <h1 class="overline-xl" align="center"> Incorrect! </h1>
+            <h1 class="overline-xl" align="center"> {{this.stay}} </h1>
             </v-snackbar>
             </div>
           </v-container>
@@ -96,16 +96,20 @@ const regex = /[!"#$%&'()*+, -./:;<=>?@[\]^_`{|}~]/g;
       success: '',
       incorrect: '',
       skips: 2,
+      stay:'',
+      continue:'',
       
     }),
     methods: {
       validate(){
         if(this.word.toUpperCase().replace(regex, '') == this.questions.answer.toUpperCase().replace(regex,'')){
           this.$emit('correct-pw', 1)
+          this.continue = "Correct!"
           this.right = true
           this.word = ''
           this.playSound(success)
         } else {
+          this.stay="Incorrect!"
           this.wrong = true
           this.word= null
           this.playSound(incorrect)
@@ -120,11 +124,17 @@ const regex = /[!"#$%&'()*+, -./:;<=>?@[\]^_`{|}~]/g;
       skip(){
         if(this.skips>0 && this.stage>0){
         this.$emit('correct-pw',1)
+        this.continue = "Skipped!"
         this.right = true
         this.word = ''
         this.playSound(success)
         this.skips--
         }else {
+          if(this.stage>0){
+            this.stay="Out of Skips"
+          }else{
+            this.stay="Can't Skip Password!"
+          }
         this.wrong = true
         this.word= null
         this.playSound(incorrect)
