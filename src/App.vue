@@ -30,15 +30,34 @@
          </v-container>
         </v-container>
 
-        <v-container v-else-if="!tooFast&&finish">
+        <v-container justify-center v-else-if="!tooFast&&finish">
         <h1 class="overline-xl" align="center">
-          You Got Through {{stage}} Questions! Using {{skipped}} Skips!
+          You Got Through {{stage}} Questions! Using {{skippedCount}} Skips!
+          </h1>
+          <br>
+          <h1 class="overline-xl" align="center" v-if="this.skippedCount>0">
+            You Skipped These Questions:
+            </h1>
+          <br>
+          <h1 class="overline-xl" align="center" v-if="this.skippedCount>0">
+            {{skippedQuestions}}
+            </h1>
+          <br>
+          <h1 class="overline-xl" align="center">
+          The Last Question You Got To Was:
+          </h1>
+          <h1 class="overline-xl" align="center">
+          {{stages[this.stage].prompt}}
           </h1>
           </v-container>
         <v-container v-else-if="tooFast&&finish">
           <h1 class="overline-xl" align="center">
-          Wow! You Got Through All The Questions in {{minutes}}:{{seconds}}! Using {{skipped}} Skips!
+          Wow! You Got Through All The Questions in {{minutes}}:{{seconds}}! Using {{skippedCount}} Skips!
           </h1>
+          <br>
+          <h1 class="overline-xl" align="center" v-if="this.skippedCount>0">
+            {{skippedQuestions}}
+            </h1>
           </v-container>
     
     
@@ -108,8 +127,8 @@ export default {
     currentTime: 0,
     minutes: 0,
     seconds: 0,
-    skipped:'',
-    
+    skippedCount:0,
+    skippedQuestions:'',
   }),
   components: {
     InputForm,
@@ -173,8 +192,14 @@ export default {
         }
         this.isMuted = !this.isMuted;
       },
-      skipped(){
-        this.skipped++
+      skipped(questions){
+        this.skippedCount++;
+        if(this.skippedCount>0 && this.skippedCount<2){
+          this.skippedQuestions= this.skippedQuestions + questions;
+        }
+        else{
+          this.skippedQuestions=this.skippedQuestions + ' & '+ questions;
+        }
       }
  },
   mounted: function () {

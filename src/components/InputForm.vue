@@ -15,7 +15,16 @@
         </v-layout>
         <br>
        
-      <v-container>
+        <v-layout justify-center>
+          <v-tooltip
+          v-model="show"
+          color="green accent-2"
+          elevation= 5
+          close-delay= 1500
+        >
+        <span>5 Streak! +1 Skip!</span>
+        </v-tooltip>
+        </v-layout>
         <v-text-field
           v-model="word"
           :hint= this.questions.hint
@@ -23,8 +32,8 @@
           persistent-hint
           >
           </v-text-field>
-        <v-layout justify-center>
-        <v-btn
+    <v-layout justify-center>
+      <v-btn
           elevation=5
           color="cyan lighten-1"
           large
@@ -42,8 +51,8 @@
           >
           Skip! ({{skips}})
           </v-btn>
-          </v-layout>
           <br>
+      </v-layout>
       <div>
             <v-snackbar
             v-model="right"
@@ -68,7 +77,6 @@
             <h1 class="overline-xl" align="center"> {{this.stay}} </h1>
             </v-snackbar>
             </div>
-          </v-container>
            </div>
           
 <br>
@@ -79,6 +87,7 @@
 <script>
 const success = require("@/assets/success.wav");
 const incorrect =require("@/assets/incorrect.mp3")
+const newSkip=require("@/assets/newSkip.wav")
 const regex = /[!"#$%&'()*+, -./:;<=>?@[\]^_`{|}~]/g;
   export default {
     name: 'input-form',
@@ -98,6 +107,9 @@ const regex = /[!"#$%&'()*+, -./:;<=>?@[\]^_`{|}~]/g;
       skips: 2,
       stay:'',
       continue:'',
+      returnQ:'',
+      streak:0,
+      show: false,
       
     }),
     methods: {
@@ -107,13 +119,25 @@ const regex = /[!"#$%&'()*+, -./:;<=>?@[\]^_`{|}~]/g;
           this.continue = "Correct!"
           this.right = true
           this.word = ''
+          if(this.streak<5){
           this.playSound(success)
+          }
+          this.streak++
         } else {
           this.stay="Incorrect!"
           this.wrong = true
           this.word= null
           this.playSound(incorrect)
         }
+        if(this.streak>4){
+          this.skips++;
+          this.show=true;
+          this.playSound(newSkip);
+          this.streak=0;
+          setTimeout((() => {
+            this.show=false;
+          }),1500)
+          }
       },
       playSound (sound) {
       if(sound) {
@@ -123,22 +147,24 @@ const regex = /[!"#$%&'()*+, -./:;<=>?@[\]^_`{|}~]/g;
       },
       skip(){
         if(this.skips>0 && this.stage>0){
-        this.$emit('skip')
-        this.$emit('correct-pw',1)
-        this.continue = "Skipped!"
-        this.right = true
-        this.word = ''
-        this.playSound(success)
-        this.skips--
+        this.returnQ = this.questions.prompt;
+        this.$emit('skip',this.returnQ);
+        this.$emit('correct-pw',1);
+        this.continue = "Skipped!";
+        this.right = true;
+        this.word = '';
+        this.playSound(success);
+        this.skips--;
+        this.streak=0;
         }else {
           if(this.stage>0){
-            this.stay="Out of Skips"
+            this.stay="Out of Skips";
           }else{
-            this.stay="Can't Skip Password!"
+            this.stay="Can't Skip Password!";
           }
-        this.wrong = true
-        this.word= null
-        this.playSound(incorrect)
+        this.wrong = true;
+        this.word= null;
+        this.playSound(incorrect);
         }
       }
     }
