@@ -1,63 +1,63 @@
 [
     {
         "prompt": "This Weeks Password",
-        "answer": "Garfield",
-        "hint": "Loves Lasagna"
+        "answer": "Legume",
+        "hint": "Bean"
     },
     {
-        "prompt": "Number of Stripes in American Flag",
-        "answer": "13",
-        "hint": "Same as the number of colonies"
+        "prompt": "Year Declaration of Independence Was Signed",
+        "answer": "1776",
+        "hint": "Also the Height of the World Trade Center"
     },
     {
-        "prompt": "Capital City of Vermont",
-        "answer": "Montpelier",
-        "hint": "French Name"
+        "prompt": "State North of Connecticut",
+        "answer": "Massachusetts",
+        "hint": "Home of Boston"
     },
     {
-        "prompt": "Area of Manhatten",
-        "answer": "23",
-        "hint": "in sq mi, no units in answer, round to whole"
+        "prompt": "Second President of The United States",
+        "answer": "John Adams",
+        "hint": "Was Vice President to George Washington"
     },
     {
-        "prompt": "Tennesee State Bird",
-        "answer": "Northern Mockingbird",
-        "hint": "Songbird"
+        "prompt": "Light Containing All Colors",
+        "answer": "White",
+        "hint": "Do Not Contain 'Light' in Your Answer"
     },
     {
-        "prompt": "nkezi elu nke tibet",
-        "answer": "4,380",
-        "hint": "Translate, Unites In Meters"
+        "prompt": "Touch Down Date of Perseverence Rover",
+        "answer": "02/18/21",
+        "hint": "'00/00/00' Use Leading Zeros if Needed"
     },
     {
-        "prompt": "Primary Language of Southern Switzerland",
-        "answer": "Italian",
-        "hint": "Makes up 8.2% of National Langueage"
+        "prompt": "Tallest Building in Hartford at the End of WWII",
+        "answer": "Travellers Tower",
+        "hint": "Was the Tallest Building in the World Outside of NYC When Built"
     },
     {
-        "prompt": "East-West Highway that connects Melbourne and Longford in Victoria, Australia",
-        "answer": "A440",
-        "hint": "Starts with 'A'"
+        "prompt": "Genus Broccoli Belongs To",
+        "answer": "Brassica",
+        "hint": "Same Genus Contains Mustard"
     },
     {
-        "prompt": "How Many Cubic Inches are in a Standard 5.3L Engine from Chevrolet",
-        "answer": "325",
-        "hint": "No unit in answer"
+        "prompt": "Age of JFK at the Start of WWII",
+        "answer": "22",
+        "hint": "Based on Invasion Date of Poland"
     },
     {
-        "prompt": "Temperature that Chicken need to be Cooked to in Order to be Deemed Safe to Eat",
-        "answer": "165",
-        "hint": "Poultry, not Ground"
+        "prompt": "Average High Temperature for Hartford, CT in 1983",
+        "answer": "39",
+        "hint": "Source: ClimateSpy"
     },
     {
-        "prompt": "Steely Dans 1974 Studio Album",
-        "answer": "Pretzel Logic",
-        "hint": "Auntie Annes"
+        "prompt": "Daft Punks 4th Studio Album Runtime",
+        "answer": "72:24",
+        "hint": "In Minutes:Seconds '00:00'"
     },
     {
-        "prompt": "Sustained Windspeed of Violent Typhoon",
-        "answer": "54",
-        "hint": "Minimum Sustained Speed in m/s"
+        "prompt": "Mythological Father of the 3rd Largest Moon of Jupiter",
+        "answer": "Tros",
+        "hint": "The Moons of Jupiter are Named After Greek Mythological People"
     },
     {
         "prompt": "Martian Atmospheric Pressure in standard atmospheres",
