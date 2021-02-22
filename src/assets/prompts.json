@@ -1,78 +1,78 @@
 [
     {
         "prompt": "This Weeks Password",
-        "answer": "Legume",
-        "hint": "Bean"
+        "answer": "Nye",
+        "hint": "Science Guy/January First"
     },
     {
-        "prompt": "Year Declaration of Independence Was Signed",
-        "answer": "1776",
-        "hint": "Also the Height of the World Trade Center"
+        "prompt": "Inventer of The Steam Engine",
+        "answer": "Thomas Newcomen",
+        "hint": "Specifically the Atmospheric Engine"
     },
     {
-        "prompt": "State North of Connecticut",
-        "answer": "Massachusetts",
-        "hint": "Home of Boston"
+        "prompt": "Length of 100ft in 1:10 Scale Drawing",
+        "answer": "10ft",
+        "hint": "Include 'ft' in your answer"
     },
     {
-        "prompt": "Second President of The United States",
-        "answer": "John Adams",
-        "hint": "Was Vice President to George Washington"
+        "prompt": "What you Define in the First Step of the Engineering Design Process",
+        "answer": "Problem",
+        "hint": "One Word"
     },
     {
-        "prompt": "Light Containing All Colors",
-        "answer": "White",
-        "hint": "Do Not Contain 'Light' in Your Answer"
+        "prompt": "Simple Machine That Goes with an Axle",
+        "answer": "Wheel",
+        "hint": "One Word"
     },
     {
-        "prompt": "Touch Down Date of Perseverence Rover",
-        "answer": "02/18/21",
-        "hint": "'00/00/00' Use Leading Zeros if Needed"
+        "prompt": "Year Madame Curie Received Nobel Prize in Physics",
+        "answer": "1903",
+        "hint": "'XXXX'"
     },
     {
-        "prompt": "Tallest Building in Hartford at the End of WWII",
-        "answer": "Travellers Tower",
-        "hint": "Was the Tallest Building in the World Outside of NYC When Built"
+        "prompt": "Symbol (letter) for Coeffecient of Friction",
+        "answer": "mu",
+        "hint": "Spell Out, Don't Use Symbol"
     },
     {
-        "prompt": "Genus Broccoli Belongs To",
-        "answer": "Brassica",
-        "hint": "Same Genus Contains Mustard"
+        "prompt": "Equation for Force",
+        "answer": "F=ma",
+        "hint": "F=xx"
     },
     {
-        "prompt": "Age of JFK at the Start of WWII",
-        "answer": "22",
-        "hint": "Based on Invasion Date of Poland"
+        "prompt": "Pierre-Simon Laplace's Publication The Year the French Revolution Ended",
+        "answer": "Traité de mécanique céleste",
+        "hint": "Copy French Spelling and Accents, 4 Words"
     },
     {
-        "prompt": "Average High Temperature for Hartford, CT in 1983",
-        "answer": "39",
-        "hint": "Source: ClimateSpy"
+        "prompt": "Connecticut's Govenor The Year Yale was Founded",
+        "answer": "Fitz-John Winthrop",
+        "hint": "First and Last Name, Include any Hyphens if Needed"
     },
     {
-        "prompt": "Daft Punks 4th Studio Album Runtime",
-        "answer": "72:24",
-        "hint": "In Minutes:Seconds '00:00'"
+        "prompt": "Capital of Roman Egypt the Day Julius Caesar was Killed",
+        "answer": "Alexandria",
+        "hint": "Named for 'The Great'"
     },
     {
-        "prompt": "Mythological Father of the 3rd Largest Moon of Jupiter",
-        "answer": "Tros",
-        "hint": "The Moons of Jupiter are Named After Greek Mythological People"
+        "prompt": "Roman Name for the Greek Godess Pluto's Twin Dwarf Planet is Named For",
+        "answer": "Discordia",
+        "hint": "Mother of Strife"
     },
     {
-        "prompt": "Martian Atmospheric Pressure in standard atmospheres",
-        "answer": "0.0065",
-        "hint": "Rounded to 10 Thousandths"
+        "prompt": "Discovery Year for the Element Number Equivilent to Hours in .214 Fortnights",
+        "answer": "1923",
+        "hint": "Round Hours Up"
     },
     {
-        "prompt": "Third Ingredient in Redbull",
-        "answer": "Glucose",
-        "hint": "Look for Nutrition Facts"
+        "prompt": "100001th State in the Union",
+        "answer": "Oregon",
+        "hint": "Number is in Bianary"
     },
     {
-        "prompt": "British Thermal Units in a Big Mac",
-        "answer": "2.23",
-        "hint": "Round to the Hundreths, convert kcal to btu"
+        "prompt": "Chinese Region That Countains These Coordinates: (Galium Melting Point F°)° N, (Galium Melting Point C°)° E ",
+        "answer": "Tibet",
+        "hint": "Use the 2 Melting Points as Coordinates(N,E)"
     },
     {
         "prompt": "Translation for the Type of Cards Nintendo Originally Made",
