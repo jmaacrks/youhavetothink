@@ -39,16 +39,16 @@
             You Skipped These Questions:
             </h1>
           <br>
-          <h1 class="overline-xl" align="center" v-if="this.skippedCount>0">
+          <h3 class="overline-xl" align="center" v-if="this.skippedCount>0">
             {{skippedQuestions}}
-            </h1>
+            </h3>
           <br>
           <h1 class="overline-xl" align="center">
           The Last Question You Got To Was:
           </h1>
-          <h1 class="overline-xl" align="center">
+          <h3 class="overline-xl" align="center">
           {{stages[this.stage].prompt}}
-          </h1>
+          </h3>
           </v-container>
         <v-container v-else-if="tooFast&&finish">
           <h1 class="overline-xl" align="center">
@@ -56,8 +56,11 @@
           </h1>
           <br>
           <h1 class="overline-xl" align="center" v-if="this.skippedCount>0">
+            You Skipped These Questions:
+          </h1>
+          <h3 class="overline-xl" align="center" v-if="this.skippedCount>0">
             {{skippedQuestions}}
-            </h1>
+          </h3>
           </v-container>
     
     
