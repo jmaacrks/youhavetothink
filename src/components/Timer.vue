@@ -19,7 +19,7 @@ style= "padding: 15px 25px">
         data() {
             return {
                 timerCount: 100,
-                seconds: 30,
+                seconds: 600,
             }
         
         },
