@@ -1,83 +1,78 @@
 [
     {
         "prompt": "This Weeks Password",
-        "answer": "Nye",
-        "hint": "Science Guy/January First"
+        "answer": "Head",
+        "hint": "What People and Cabbage Have in Common"
     },
     {
-        "prompt": "Inventer of The Steam Engine",
-        "answer": "Thomas Newcomen",
-        "hint": "Specifically the Atmospheric Engine"
+        "prompt": "Year Penicillin was Discovered",
+        "answer": "1928",
+        "hint": "XXXX"
     },
     {
-        "prompt": "Length of 100ft in 1:10 Scale Drawing",
-        "answer": "10ft",
-        "hint": "Include 'ft' in your answer"
+        "prompt": "3D View on Technical Drawing Drawn on 120° Lines",
+        "answer": "Isometric",
+        "hint": "This Was the View on the Top Right of Your Assignments"
     },
     {
-        "prompt": "What you Define in the First Step of the Engineering Design Process",
-        "answer": "Problem",
-        "hint": "One Word"
+        "prompt": "Name of Structural Force on an Object When it is Stretched",
+        "answer": "Tension",
+        "hint": "Side Effect of Being Stressed"
     },
     {
-        "prompt": "Simple Machine That Goes with an Axle",
-        "answer": "Wheel",
-        "hint": "One Word"
+        "prompt": "Acceleration of Earths Gravity",
+        "answer": "9.807",
+        "hint": "To the Thousandths Place, no Units"
     },
     {
-        "prompt": "Year Madame Curie Received Nobel Prize in Physics",
-        "answer": "1903",
-        "hint": "'XXXX'"
+        "prompt": "Director of Software Engineering Division for NASAs Apollo Program",
+        "answer": "Margaret Hamilton",
+        "hint": "This is The Same Person Who Directed the MIT Instrumentation Lab"
     },
     {
-        "prompt": "Symbol (letter) for Coeffecient of Friction",
-        "answer": "mu",
-        "hint": "Spell Out, Don't Use Symbol"
+        "prompt": "Symbol Used to Show Change in Variable",
+        "answer": "Delta",
+        "hint": "Spell Out, Don't Use Symbol (This is a Greek Letter)"
     },
     {
-        "prompt": "Equation for Force",
-        "answer": "F=ma",
-        "hint": "F=xx"
+        "prompt": "Equation for Speed",
+        "answer": "s=d/t",
+        "hint": "s=x/x"
     },
     {
-        "prompt": "Pierre-Simon Laplace's Publication The Year the French Revolution Ended",
+        "prompt": "Five-Volume Treatise on Celestial Mechanics Written by Pierre-Simon Laplace",
         "answer": "Traité de mécanique céleste",
         "hint": "Copy French Spelling and Accents, 4 Words"
     },
     {
-        "prompt": "Connecticut's Govenor The Year Yale was Founded",
-        "answer": "Fitz-John Winthrop",
-        "hint": "First and Last Name, Include any Hyphens if Needed"
+        "prompt": "Was Alaska a State When World War II Ended",
+        "answer": "No",
+        "hint": "Yes or No"
     },
     {
-        "prompt": "Capital of Roman Egypt the Day Julius Caesar was Killed",
-        "answer": "Alexandria",
-        "hint": "Named for 'The Great'"
+        "prompt": "Capital of the Republic of China the Year WWI Started",
+        "answer": "Peking",
+        "hint": "This City Would Later Host the 2008 Summer Olympics Under a Different Name"
     },
     {
-        "prompt": "Roman Name for the Greek Godess Pluto's Twin Dwarf Planet is Named For",
-        "answer": "Discordia",
-        "hint": "Mother of Strife"
+        "prompt": "Mythological Mother of Neptunes Largest Moon",
+        "answer": "Amphitrite",
+        "hint": "Wife of Poseidon"
     },
     {
-        "prompt": "Discovery Year for the Element Number Equivilent to Hours in .214 Fortnights",
-        "answer": "1923",
-        "hint": "Round Hours Up"
+        "prompt": "Chemical Symbol for the Number of States in ",
+        "answer": "Ca",
+        "hint": "2 Letters"
     },
     {
-        "prompt": "100001th State in the Union",
-        "answer": "Oregon",
-        "hint": "Number is in Bianary"
+        "prompt": "2A State in the Union",
+        "answer": "Washington",
+        "hint": "Number is in Hexadecimal"
     },
     {
-        "prompt": "Chinese Region That Countains These Coordinates: (Galium Melting Point F°)° N, (Galium Melting Point C°)° E ",
-        "answer": "Tibet",
-        "hint": "Use the 2 Melting Points as Coordinates(N,E)"
-    },
-    {
-        "prompt": "Translation for the Type of Cards Nintendo Originally Made",
-        "answer": "Flower Cards",
-        "hint": "Include the word 'Cards' in your Answer"
+        "prompt": "https://i.pinimg.com/originals/6a/6a/cc/6a6acc5714548ce3c0fff5c737c7938d.png",
+        "answer": "J",
+        "hint": "Letter in Sign Language"
     },
     {
         "prompt": "16th Presidents Assassiniation Date In Mayan Calander",
