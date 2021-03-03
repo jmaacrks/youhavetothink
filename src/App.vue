@@ -42,18 +42,35 @@
           <h3 class="overline-xl" align="center" v-if="this.skippedCount>0">
             {{skippedQuestions}}
             </h3>
+          <h1 class="overline-xl" align="center" v-if="this.skippedCount>0">
+            These Are the Answers to the Skipped Questions:
+          </h1>
           <br>
+          <h3 class="overline-xl" align="center" v-if="this.skippedCount>0">
+            {{skippedAnswers}}
+            </h3>
+          <br>
+
           <h1 class="overline-xl" align="center">
           The Last Question You Got To Was:
           </h1>
           <h3 class="overline-xl" align="center">
           {{stages[this.stage].prompt}}
           </h3>
+          <h1 class="overline-xl" align="center">
+          And the Answer Was:
+          </h1>
+          <h3 class="overline-xl" align="center">
+          {{stages[this.stage].answer}}
+          </h3>
           </v-container>
         <v-container v-else-if="tooFast&&finish">
           <h1 class="overline-xl" align="center">
           Wow! You Got Through All The Questions in {{minutes}}:{{seconds}}! Using {{skippedCount}} Skips!
           </h1>
+          <h3 class="overline-xl" align="center">
+            ({{deductedTime}} was added to your time from using skips)
+            </h3>
           <br>
           <h1 class="overline-xl" align="center" v-if="this.skippedCount>0">
             You Skipped These Questions:
@@ -61,6 +78,13 @@
           <h3 class="overline-xl" align="center" v-if="this.skippedCount>0">
             {{skippedQuestions}}
           </h3>
+          <h1 class="overline-xl" align="center" v-if="this.skippedCount>0">
+            These Are the Answers to the Skipped Questions:
+          </h1>
+          <br>
+          <h3 class="overline-xl" align="center" v-if="this.skippedCount>0">
+            {{skippedAnswers}}
+            </h3>
           </v-container>
     
     
@@ -132,6 +156,8 @@ export default {
     seconds: 0,
     skippedCount:0,
     skippedQuestions:'',
+    skippedAnswers:'',
+    deductedTime:'',
   }),
   components: {
     InputForm,
@@ -166,6 +192,7 @@ export default {
       },1500)
       }
       this.currentSong = this.lobbyMusic
+      this.deductedTime=this.skippedCount*30
     },
     tickClock(){
       if(!this.finish){
@@ -195,13 +222,16 @@ export default {
         }
         this.isMuted = !this.isMuted;
       },
-      skipped(questions){
+      skipped(questions, answers){
         this.skippedCount++;
+        this.currentTime+30;
         if(this.skippedCount>0 && this.skippedCount<2){
           this.skippedQuestions= this.skippedQuestions + questions;
+          this.skippedAnswers= this.skippesAnswers + answers;
         }
         else{
           this.skippedQuestions=this.skippedQuestions + ' & '+ questions;
+          this.skippedAnswers=this.skippedAnswers + ' & ' + answers;
         }
       }
  },

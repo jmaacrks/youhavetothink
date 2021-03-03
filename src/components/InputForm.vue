@@ -18,11 +18,11 @@
         <v-layout justify-center>
           <v-tooltip
           v-model="show"
-          color="green accent-2"
+          :color = this.toolTipTheme
           elevation= 5
           close-delay= 1500
         >
-        <span>5 Streak! +1 Skip!</span>
+        <span>{{tooltip}}</span>
         </v-tooltip>
         </v-layout>
         <v-text-field
@@ -104,12 +104,15 @@ const regex = /[!"#$%&'()*+, -./:;<=>?@[\]^_`{|}~]/g;
       timeout: 2000,
       success: '',
       incorrect: '',
-      skips: 2,
+      skips: 0,
       stay:'',
       continue:'',
       returnQ:'',
       streak:0,
       show: false,
+      returnA:'',
+      tooltip: '',
+      toolTipTheme:'',
       
     }),
     methods: {
@@ -131,6 +134,8 @@ const regex = /[!"#$%&'()*+, -./:;<=>?@[\]^_`{|}~]/g;
         }
         if(this.streak>4){
           this.skips++;
+          this.tooltip = '5 Streak! +1 Skip!';
+          this.toolTipTheme = 'green accent-2';
           this.show=true;
           this.playSound(newSkip);
           this.streak=0;
@@ -146,9 +151,10 @@ const regex = /[!"#$%&'()*+, -./:;<=>?@[\]^_`{|}~]/g;
       }
       },
       skip(){
-        if(this.skips>0 && this.stage>0){
+        if(this.skips>0 && this.stage>0 && this.stage!=20){
         this.returnQ = this.questions.prompt;
-        this.$emit('skip',this.returnQ);
+        this.returnA = this.questions.answer;
+        this.$emit('skip',this.returnQ,this.returnA);
         this.$emit('correct-pw',1);
         this.continue = "Skipped!";
         this.right = true;
@@ -156,8 +162,18 @@ const regex = /[!"#$%&'()*+, -./:;<=>?@[\]^_`{|}~]/g;
         this.playSound(success);
         this.skips--;
         this.streak=0;
+        this.$root.$emit('skipped',.0025);
+        this.tooltip = '-30 Seconds!';
+        this.toolTipTheme = 'red accent-2';
+        this.show= true;
+        setTimeout((() => {
+            this.show=false;
+          }),1500)
         }else {
-          if(this.stage>0){
+          if(this.stage==20){
+            this.stay="Can't Skip Last Prompt!";
+          }
+          else if(this.stage>0){
             this.stay="Out of Skips";
           }else{
             this.stay="Can't Skip Password!";
