@@ -6,11 +6,11 @@
     },
     {
         "prompt": "Average Age of An American",
-        "answer": "30",
+        "answer": "38",
         "hint": "Round to Whole"
     },
     {
-        "prompt": "Only State That Doesn't Use Daylight Savings Time",
+        "prompt": "Only Contiguous State That Doesn't Use Daylight Savings Time",
         "answer": "Arizona",
         "hint": "Navajo Population Still Observes"
     },
@@ -32,7 +32,7 @@
     {
         "prompt": "Greek Letter Used to Represent Strain",
         "answer": "ε",
-        "hint": "Use Actual Greek Letter"
+        "hint": "Use Actual Greek Letter, will be lower case."
     },
     {
         "prompt": "Distance Between Studs in An American House",
@@ -40,9 +40,9 @@
         "hint": "No Units, Number May Be Reffered to as 'On Center'"
     },
     {
-        "prompt": "Weight of Statue of Liberty Were it On Mars",
-        "answer": "93750",
-        "hint": "Whole Number"
+        "prompt": "Weight of Titanic Were it On Mars",
+        "answer": "39232500",
+        "hint": "Whole Number, in lbs"
     },
     {
         "prompt": "Amount of Pressure Exerted on a Submarine at the Bottom of the Mariana Trench",
@@ -50,24 +50,14 @@
         "hint": "Tons/in^2, no units"
     },
     {
-        "prompt": "Sum of Germany's Average Winter Temperature in Kelvin and Swedens Average Winter Temperature in Fahrenheit",
-        "answer": "303",
-        "hint": "Take the Upper Number of Any Range You Find"
-    },
-    {
-        "prompt": "Mythological Mother of Neptunes Largest Moon",
-        "answer": "Amphitrite",
-        "hint": "Wife of Poseidon"
+        "prompt": "Sum of Water's Freezing Point in Kelvin and Water's Boiling Point in Fahrenheit",
+        "answer": "485",
+        "hint": "Round to Whole Number"
     },
     {
         "prompt": "Compliment of the Least Common Eye Color",
         "answer": "Red",
         "hint": "Use a Color Wheel"
-    },
-    {
-        "prompt": "2A State in the Union",
-        "answer": "Washington",
-        "hint": "Number is in Hexadecimal"
     },
     {
         "prompt": "Years From Cleopatras Death to the Moond Landing",
