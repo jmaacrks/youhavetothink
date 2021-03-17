@@ -1,58 +1,58 @@
 [
     {
         "prompt": "This Weeks Password",
-        "answer": "Head",
-        "hint": "What People and Cabbage Have in Common"
+        "answer": "Green",
+        "hint": "Clovers and What Have You"
     },
     {
-        "prompt": "Year Penicillin was Discovered",
-        "answer": "1928",
-        "hint": "XXXX"
+        "prompt": "Average Age of An American",
+        "answer": "30",
+        "hint": "Round to Whole"
     },
     {
-        "prompt": "3D View on Technical Drawing Drawn on 120° Lines",
-        "answer": "Isometric",
-        "hint": "This Was the View on the Top Right of Your Assignments"
+        "prompt": "Only State That Doesn't Use Daylight Savings Time",
+        "answer": "Arizona",
+        "hint": "Navajo Population Still Observes"
     },
     {
-        "prompt": "Name of Structural Force on an Object When it is Stretched",
-        "answer": "Tension",
-        "hint": "Side Effect of Being Stressed"
+        "prompt": "Gravity is an Example of an Internal or External Force",
+        "answer": "External",
+        "hint": "'Internal' or 'External'"
     },
     {
-        "prompt": "Acceleration of Earths Gravity",
-        "answer": "9.807",
-        "hint": "To the Thousandths Place, no Units"
+        "prompt": "Primary Element Found in an Egg Shell",
+        "answer": "Ca",
+        "hint": "2 Letter Symbol, Will Be in a Molecule with Carbon"
     },
     {
-        "prompt": "Director of Software Engineering Division for NASAs Apollo Program",
-        "answer": "Margaret Hamilton",
-        "hint": "This is The Same Person Who Directed the MIT Instrumentation Lab"
+        "prompt": "Structural Force That is Applied in Two Opposite Directions",
+        "answer": "Shear",
+        "hint": "Also Used to Harvest Wool"
     },
     {
-        "prompt": "Symbol Used to Show Change in Variable",
-        "answer": "Delta",
-        "hint": "Spell Out, Don't Use Symbol (This is a Greek Letter)"
+        "prompt": "Greek Letter Used to Represent Strain",
+        "answer": "ε",
+        "hint": "Use Actual Greek Letter"
     },
     {
-        "prompt": "Equation for Speed",
-        "answer": "s=d/t",
-        "hint": "s=x/x"
+        "prompt": "Distance Between Studs in An American House",
+        "answer": "16",
+        "hint": "No Units, Number May Be Reffered to as 'On Center'"
     },
     {
-        "prompt": "Five-Volume Treatise on Celestial Mechanics Written by Pierre-Simon Laplace",
-        "answer": "Traité de mécanique céleste",
-        "hint": "Copy French Spelling and Accents, 4 Words"
+        "prompt": "Weight of Statue of Liberty Were it On Mars",
+        "answer": "93750",
+        "hint": "Whole Number"
     },
     {
-        "prompt": "Was Alaska a State When World War II Ended",
-        "answer": "No",
-        "hint": "Yes or No"
+        "prompt": "Amount of Pressure Exerted on a Submarine at the Bottom of the Mariana Trench",
+        "answer": "8",
+        "hint": "Tons/in^2, no units"
     },
     {
-        "prompt": "Capital of the Republic of China the Year WWI Started",
-        "answer": "Peking",
-        "hint": "This City Would Later Host the 2008 Summer Olympics Under a Different Name"
+        "prompt": "Sum of Germany's Average Winter Temperature in Kelvin and Swedens Average Winter Temperature in Fahrenheit",
+        "answer": "303",
+        "hint": "Take the Upper Number of Any Range You Find"
     },
     {
         "prompt": "Mythological Mother of Neptunes Largest Moon",
@@ -60,9 +60,9 @@
         "hint": "Wife of Poseidon"
     },
     {
-        "prompt": "Chemical Symbol for the Number of States at the end of the Civil War",
-        "answer": "Ca",
-        "hint": "Use Periodic Table!"
+        "prompt": "Compliment of the Least Common Eye Color",
+        "answer": "Red",
+        "hint": "Use a Color Wheel"
     },
     {
         "prompt": "2A State in the Union",
@@ -70,33 +70,38 @@
         "hint": "Number is in Hexadecimal"
     },
     {
-        "prompt": "https://i.pinimg.com/originals/6a/6a/cc/6a6acc5714548ce3c0fff5c737c7938d.png",
-        "answer": "J",
-        "hint": "Letter in Sign Language"
+        "prompt": "Years From Cleopatras Death to the Moond Landing",
+        "answer": "1999",
+        "hint": "Watch Your BCE and CE!"
     },
     {
-        "prompt": "16th Presidents Assassiniation Date In Mayan Calander",
-        "answer": "12.12.10.2.19",
-        "hint": "Long Count Date"
+        "prompt": "City that Contains the United States Cheese Cave",
+        "answer": "Springfield, Missouri",
+        "hint": "Include the State"
     },
     {
-        "prompt": "Resting Place of 23rd President",
-        "answer": "Crown Hill",
-        "hint": "Do not include 'Cemetary' in your Answer"
+        "prompt": "American Cheeses' Country of Origin",
+        "answer": "Switzerland",
+        "hint": "Name of Country"
     },
     {
-        "prompt": "Leader of Uat-Ur Civilization Who Created a Canal to the Red Sea",
-        "answer": "Darius I",
-        "hint": "Include Suffix"
+        "prompt": "https://cdn.goconqr.com/uploads/multiple_choice_question/image/4347993/desktop_701c6e6b-2dfd-467b-9f00-34a872597fa1.jpeg",
+        "answer": "2.9cm",
+        "hint": "Include Units"
     },
     {
-        "prompt": "Substance Sown After Punic Wars",
-        "answer": "NaCL",
-        "hint": "Chemical Formula"
+        "prompt": "Oven Temperature for Gordon Ramsey's Beef Wellington",
+        "answer": "392",
+        "hint": "In F, no unit needed"
     },
     {
-        "prompt": "Process of Binding Faces of the 1896 Invention of Carl Edvard Johansson",
-        "answer": "Wringing",
-        "hint": "Includes 'ing'"
+        "prompt": "https://webassign.net/labsgraceperiod/ncsulcpmech2/appendices/appendixD/images/figure1.png",
+        "answer": "1.165",
+        "hint": "Read Verneier Caliper"
+    },
+    {
+        "prompt": "Line (x^2 - 9 = 0) of MGMT's 'Little Dark Age' ",
+        "answer": "The ruins of the day",
+        "hint": "Solve For X"
     }
 ]
