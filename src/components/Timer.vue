@@ -32,11 +32,10 @@ style= "padding: 15px 25px">
                         setTimeout(() => {
                             this.timerCount= this.timerCount - (1/this.seconds);
                             this.$emit('tick-clock')
-                            this.$root.$on('skipped', reduction => {
-                                 this.timerCount= this.timerCount - reduction;
-                             });
                         }, 10);
-                        
+                     this.$root.$on('skipped', reduction => {
+                     this.timerCount= this.timerCount - reduction;
+                      });
                     } else { 
                    this.$emit('time-up')
                     }
