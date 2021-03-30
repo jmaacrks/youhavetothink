@@ -33,18 +33,16 @@ style= "padding: 15px 25px">
                             this.timerCount= this.timerCount - (1/this.seconds);
                             this.$emit('tick-clock')
                         }, 10);
-                     this.$root.$on('skipped', reduction => {
-                     this.timerCount= this.timerCount - reduction;
-                      });
                     } else { 
                    this.$emit('time-up')
                     }
-
                 },
                 immediate: true, // This ensures the watcher is triggered upon creation
+                
             }
         }
     }
+
       
 
 </script>

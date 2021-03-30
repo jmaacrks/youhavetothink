@@ -1,48 +1,48 @@
 [
     {
         "prompt": "This Weeks Password",
-        "answer": "Green",
-        "hint": "Clovers and What Have You"
+        "answer": "Moon",
+        "hint": "Yue be Like"
     },
     {
-        "prompt": "Average Age of An American",
-        "answer": "38",
-        "hint": "Round to Whole"
-    },
-    {
-        "prompt": "Only Contiguous State That Doesn't Use Daylight Savings Time",
-        "answer": "Arizona",
-        "hint": "Navajo Population Still Observes"
-    },
-    {
-        "prompt": "Gravity is an Example of an Internal or External Force",
-        "answer": "External",
-        "hint": "'Internal' or 'External'"
-    },
-    {
-        "prompt": "Primary Element Found in an Egg Shell",
-        "answer": "Ca",
-        "hint": "2 Letter Symbol, Will Be in a Molecule with Carbon"
-    },
-    {
-        "prompt": "Structural Force That is Applied in Two Opposite Directions",
+        "prompt": "Internal Force that Occurs During 'Slipping'",
         "answer": "Shear",
-        "hint": "Also Used to Harvest Wool"
+        "hint": "Perpendicular/Oposing Force"
     },
     {
-        "prompt": "Greek Letter Used to Represent Strain",
-        "answer": "ε",
-        "hint": "Use Actual Greek Letter, will be lower case."
+        "prompt": "Current Time in London, When It's 12:00PM in NYC",
+        "answer": "5:00 PM",
+        "hint": "Include AM/PM"
     },
     {
-        "prompt": "Distance Between Studs in An American House",
-        "answer": "16",
-        "hint": "No Units, Number May Be Reffered to as 'On Center'"
+        "prompt": "Internal Force Applied on the Triangle Member that is Perpendicular to The Force",
+        "answer": "Tension",
+        "hint": "This would be the 'bottom' in our examples"
     },
     {
-        "prompt": "Weight of Titanic Were it On Mars",
-        "answer": "39232500",
-        "hint": "Whole Number, in lbs"
+        "prompt": "Connecticut State Mammal",
+        "answer": "Sperm Whale",
+        "hint": "Oil Bearing"
+    },
+    {
+        "prompt": "ε is the Symbol For",
+        "answer": "Strain",
+        "hint": "Lower Case Epsilon"
+    },
+    {
+        "prompt": "Chemical Symbol for Common Salt Addative",
+        "answer": "I",
+        "hint": "One Letter"
+    },
+    {
+        "prompt": "One Minute of Nile Water Discharge in Cubic Furlongs",
+        "answer": "0.02",
+        "hint": "Round to the Nearest Tenth (Don't Round Initial Conversion)"
+    },
+    {
+        "prompt": "Weight of Liter of Water on Venus",
+        "answer": ".9",
+        "hint": "Round to Tenth of a Kg"
     },
     {
         "prompt": "Amount of Pressure Exerted on a Submarine at the Bottom of the Mariana Trench",
@@ -60,7 +60,7 @@
         "hint": "Use a Color Wheel"
     },
     {
-        "prompt": "Years From Cleopatras Death to the Moond Landing",
+        "prompt": "Years Between Cleopatras Death to the Moond Landing",
         "answer": "1999",
         "hint": "Watch Your BCE and CE!"
     },

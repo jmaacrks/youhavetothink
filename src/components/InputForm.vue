@@ -104,7 +104,7 @@ const regex = /[!"#$%&'()*+, -./:;<=>?@[\]^_`{|}~]/g;
       timeout: 2000,
       success: '',
       incorrect: '',
-      skips: 0,
+      skips: 1,
       stay:'',
       continue:'',
       returnQ:'',
@@ -162,10 +162,6 @@ const regex = /[!"#$%&'()*+, -./:;<=>?@[\]^_`{|}~]/g;
         this.playSound(success);
         this.skips--;
         this.streak=0;
-        this.$root.$emit('skipped',.0025);
-        this.tooltip = '-30 Seconds!';
-        this.toolTipTheme = 'red accent-2';
-        this.show= true;
         setTimeout((() => {
             this.show=false;
           }),1500)
