@@ -36,8 +36,8 @@
     },
     {
         "prompt": "One Minute of Nile Water Discharge in Cubic Furlongs",
-        "answer": "0.02",
-        "hint": "Round to the Nearest Tenth (Don't Round Initial Conversion)"
+        "answer": ".02",
+        "hint": "Round to the Nearest Hundredth (Don't Round Initial Conversion)"
     },
     {
         "prompt": "Weight of Liter of Water on Venus",
@@ -67,7 +67,7 @@
     {
         "prompt": "City that Contains the United States Cheese Cave",
         "answer": "Springfield, Missouri",
-        "hint": "Include the State"
+        "hint": "Include the State, No Abbreviation"
     },
     {
         "prompt": "American Cheeses' Country of Origin",

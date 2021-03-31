@@ -32,7 +32,7 @@
 
         <v-container justify-center v-else-if="!tooFast&&finish">
         <h1 class="overline-xl" align="center">
-          You Got Through {{stage}} Questions! Using {{skippedCount}} Skips!
+          You Got Through {{stage}} Questions! You Got {{score}}pts!
           </h1>
           <br>
           <h1 class="overline-xl" align="center" v-if="this.skippedCount>0">
@@ -66,12 +66,8 @@
           </v-container>
         <v-container v-else-if="tooFast&&finish">
           <h1 class="overline-xl" align="center">
-          Wow! You Got Through All The Questions in {{minutes}}:{{seconds}}! Using {{skippedCount}} Skips!
+          Wow! You Got Through All The Questions in {{minutes}}:{{seconds}}! Your Got {{score}}pts!
           </h1>
-          <h3 class="overline-xl" align="center">
-            ({{deductedTime}} was added to your time from using skips)
-            </h3>
-          <br>
           <h1 class="overline-xl" align="center" v-if="this.skippedCount>0">
             You Skipped These Questions:
           </h1>
@@ -157,7 +153,7 @@ export default {
     skippedCount:0,
     skippedQuestions:'',
     skippedAnswers:'',
-    deductedTime:'',
+    score:'',
   }),
   components: {
     InputForm,
@@ -192,13 +188,16 @@ export default {
       },1500)
       }
       this.currentSong = this.lobbyMusic
-      this.deductedTime=this.skippedCount*30
     },
     tickClock(){
       if(!this.finish){
-      this.currentTime = this.currentTime + .01;
-      this.minutes = Math.floor(this.currentTime/60);
-      this.seconds =Math.round( this.currentTime - (this.minutes * 60));
+        this.currentTime = this.currentTime + .01;
+        this.minutes = Math.floor(this.currentTime/60);
+        this.seconds =Math.round( this.currentTime - (this.minutes * 60));
+        this.score = Math.round(((this.stage-1)*38) - (this.skippedCount*60) + (600-this.currentTime));
+          if(this.score < 0){
+            this.score = 0;
+          }
       }
     },
     playSound (sound) {
