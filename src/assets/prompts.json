@@ -37,7 +37,7 @@
     {
         "prompt": "Ga Melting Point in Kelvin",
         "answer": "302.9 K",
-        "hint": "Round to Tenth"
+        "hint": "Round to Tenth, Include Units"
     },
     {
         "prompt": "Weight of Liter of Water on Mercury in Kg",
@@ -90,7 +90,7 @@
         "hint": "Read Verneier Caliper"
     },
     {
-        "prompt": "Line (x^2 - 35 = 10) of MGMT's 'Little Dark Age' ",
+        "prompt": "Line (x^2 - 15 = 10) of MGMT's 'Little Dark Age' ",
         "answer": "And the more I straighten out",
         "hint": "Solve For X"
     }
