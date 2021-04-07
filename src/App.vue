@@ -19,6 +19,7 @@
         <input-form 
           @correct-pw="startGame"
           @skip="skipped"
+          @wrong="wrongAnser"
           :questions = stages[this.stage]
           :stage= this.stage
         />
@@ -232,6 +233,9 @@ export default {
           this.skippedQuestions=this.skippedQuestions + ' & '+ questions;
           this.skippedAnswers=this.skippedAnswers + ' & ' + answers;
         }
+      },
+      wrongAnser(){
+        this.score-=15;
       }
  },
   mounted: function () {

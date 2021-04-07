@@ -131,6 +131,7 @@ const regex = /[!"#$%&'()*+, -./:;<=>?@[\]^_`{|}~]/g;
           this.wrong = true
           this.word= null
           this.playSound(incorrect)
+          this.$emit('wrong',1);
         }
         if(this.streak>4){
           this.skips++;

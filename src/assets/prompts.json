@@ -1,88 +1,88 @@
 [
     {
         "prompt": "This Weeks Password",
-        "answer": "Moon",
-        "hint": "Yue be Like"
+        "answer": "accelerate",
+        "hint": "speeding up"
     },
     {
-        "prompt": "Internal Force that Occurs During 'Slipping'",
-        "answer": "Shear",
-        "hint": "Perpendicular/Oposing Force"
+        "prompt": "Another Word for the Weight Put Ontop of Your Tower",
+        "answer": "Load",
+        "hint": "'Off My Chest'"
     },
     {
-        "prompt": "Current Time in London, When It's 12:00PM in NYC",
-        "answer": "5:00 PM",
-        "hint": "Include AM/PM"
+        "prompt": "Astronomical Event Marking Either the Start of Spring or Fall",
+        "answer": "Equinox",
+        "hint": "One Word"
     },
     {
-        "prompt": "Internal Force Applied on the Triangle Member that is Perpendicular to The Force",
-        "answer": "Tension",
-        "hint": "This would be the 'bottom' in our examples"
+        "prompt": "Name for A Group of Rats",
+        "answer": "Mischief",
+        "hint": "Rambunctious Little Fellows, eh?"
     },
     {
-        "prompt": "Connecticut State Mammal",
-        "answer": "Sperm Whale",
-        "hint": "Oil Bearing"
+        "prompt": "What Lunar Event Preceds Easter",
+        "answer": "Full Moon",
+        "hint": "2 Words"
     },
     {
-        "prompt": "ε is the Symbol For",
-        "answer": "Strain",
-        "hint": "Lower Case Epsilon"
+        "prompt": "Bean Used in Chocolate Production",
+        "answer": "Cocoa",
+        "hint": "Do Not Include 'Bean' in Your Answer "
     },
     {
-        "prompt": "Chemical Symbol for Common Salt Addative",
-        "answer": "I",
-        "hint": "One Letter"
+        "prompt": "Year of Construction of the 2nd Largest Airport in Chicago",
+        "answer": "1923",
+        "hint": "XXXX"
     },
     {
-        "prompt": "One Minute of Nile Water Discharge in Cubic Furlongs",
-        "answer": ".02",
-        "hint": "Round to the Nearest Hundredth (Don't Round Initial Conversion)"
+        "prompt": "Ga Melting Point in Kelvin",
+        "answer": "302.9 K",
+        "hint": "Round to Tenth"
     },
     {
-        "prompt": "Weight of Liter of Water on Venus",
-        "answer": ".9",
-        "hint": "Round to Tenth of a Kg"
+        "prompt": "Weight of Liter of Water on Mercury in Kg",
+        "answer": ".38",
+        "hint": "Round to 10 Grams"
     },
     {
-        "prompt": "Amount of Pressure Exerted on a Submarine at the Bottom of the Mariana Trench",
-        "answer": "8",
-        "hint": "Tons/in^2, no units"
+        "prompt": "What Weighs More, a Kilogram of Feathers, or a Pound of Rocks?",
+        "answer": "Feathers",
+        "hint": "'Feathers', or 'Rocks'"
     },
     {
-        "prompt": "Sum of Water's Freezing Point in Kelvin and Water's Boiling Point in Fahrenheit",
-        "answer": "485",
-        "hint": "Round to Whole Number"
+        "prompt": "Year Einstein Received his Nobel Prize for the Photoelctric Effect",
+        "answer": "1922",
+        "hint": "Year he RECEIVED the Prize"
     },
     {
-        "prompt": "Compliment of the Least Common Eye Color",
-        "answer": "Red",
+        "prompt": "Compliment of the Color Associated with Mars",
+        "answer": "Green",
         "hint": "Use a Color Wheel"
     },
     {
-        "prompt": "Years Between Cleopatras Death to the Moond Landing",
-        "answer": "1999",
-        "hint": "Watch Your BCE and CE!"
+        "prompt": "What Document was Ratified the Year of the Architectural Height of the One WTC?",
+        "answer": "Declaration of Independence",
+        "hint": "Architectural Height"
     },
     {
-        "prompt": "City that Contains the United States Cheese Cave",
-        "answer": "Springfield, Missouri",
-        "hint": "Include the State, No Abbreviation"
+        "prompt": "Axis an Airplane will Rotate on to Descend",
+        "answer": "Tilt",
+        "hint": "Yaw, Pan, or Tilt"
     },
     {
-        "prompt": "American Cheeses' Country of Origin",
-        "answer": "Switzerland",
-        "hint": "Name of Country"
+        "prompt": "Melting Point of Substance Marcus Crassus Died Drinking",
+        "answer": "1064",
+        "hint": "Celsius, Whole Number, No Units"
     },
     {
-        "prompt": "https://cdn.goconqr.com/uploads/multiple_choice_question/image/4347993/desktop_701c6e6b-2dfd-467b-9f00-34a872597fa1.jpeg",
-        "answer": "2.9cm",
-        "hint": "Include Units"
+        "prompt": "https://content.bartleby.com/tbms-images/9781337614085/Chapter-P/images/14085-p.3-17e-question-digital_image001.jpg",
+        "answer": "7.5",
+        "hint": "Line Segment GH * Line Segment EF , No Units, Exact Answer"
     },
     {
-        "prompt": "Oven Temperature for Gordon Ramsey's Beef Wellington",
-        "answer": "392",
-        "hint": "In F, no unit needed"
+        "prompt": "What Planet is the Valence Electrons of Sulfur From the Sun",
+        "answer": "Saturn",
+        "hint": "Earth is the 3rd Planet, or the Valence Electrons of Boron, From the Sun"
     },
     {
         "prompt": "https://webassign.net/labsgraceperiod/ncsulcpmech2/appendices/appendixD/images/figure1.png",
@@ -90,8 +90,8 @@
         "hint": "Read Verneier Caliper"
     },
     {
-        "prompt": "Line (x^2 - 9 = 0) of MGMT's 'Little Dark Age' ",
-        "answer": "The ruins of the day",
+        "prompt": "Line (x^2 - 35 = 10) of MGMT's 'Little Dark Age' ",
+        "answer": "And the more I straighten out",
         "hint": "Solve For X"
     }
 ]
