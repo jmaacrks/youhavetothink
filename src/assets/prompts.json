@@ -1,48 +1,48 @@
 [
     {
-        "prompt": "This Weeks Password",
-        "answer": "accelerate",
-        "hint": "speeding up"
+        "prompt": "Who Is The Mayor of Hartford",
+        "answer": "Luke Bronin",
+        "hint": "Worked in Obama Admin"
     },
     {
-        "prompt": "Another Word for the Weight Put Ontop of Your Tower",
-        "answer": "Load",
-        "hint": "'Off My Chest'"
+        "prompt": "Hartford Chamber of Commerce Address",
+        "answer": "31 Pratt Street, 5th Floor Hartford, CT 06103",
+        "hint": "Include Floor Number and Zip Code"
     },
     {
-        "prompt": "Astronomical Event Marking Either the Start of Spring or Fall",
-        "answer": "Equinox",
-        "hint": "One Word"
+        "prompt": "Is The Lunch Here Bad?",
+        "answer": "Yes",
+        "hint": "You Can Be Honest"
     },
     {
-        "prompt": "Name for A Group of Rats",
-        "answer": "Mischief",
-        "hint": "Rambunctious Little Fellows, eh?"
+        "prompt": "Hartford Area",
+        "answer": "17.95",
+        "hint": "in square miles, don't include a unit"
     },
     {
-        "prompt": "What Lunar Event Preceds Easter",
-        "answer": "Full Moon",
-        "hint": "2 Words"
+        "prompt": "2020 Hartford Population",
+        "answer": "121054",
+        "hint": "If 2 Numbers appear, chose the first"
     },
     {
-        "prompt": "Bean Used in Chocolate Production",
-        "answer": "Cocoa",
-        "hint": "Do Not Include 'Bean' in Your Answer "
+        "prompt": "Hartford County Senator",
+        "answer": "Richard Blumenthal",
+        "hint": "Our Guy"
     },
     {
-        "prompt": "Year of Construction of the 2nd Largest Airport in Chicago",
-        "answer": "1923",
+        "prompt": "What Year Was Hartford Founded",
+        "answer": "1849",
         "hint": "XXXX"
     },
     {
-        "prompt": "Ga Melting Point in Kelvin",
-        "answer": "302.9 K",
-        "hint": "Round to Tenth, Include Units"
+        "prompt": "Hartford's Oldest High School",
+        "answer": "Hartford Public High School",
+        "hint": "I mean, yeah, I guess this one makes sense"
     },
     {
-        "prompt": "Weight of Liter of Water on Mercury in Kg",
-        "answer": ".38",
-        "hint": "Round to 10 Grams"
+        "prompt": "What Letters Would You Need to Remove From the Entrance to Say 'Ass School'",
+        "answer": "CLICAL MAGNET",
+        "hint": "Put The Letters in Order"
     },
     {
         "prompt": "What Weighs More, a Kilogram of Feathers, or a Pound of Rocks?",
@@ -50,14 +50,19 @@
         "hint": "'Feathers', or 'Rocks'"
     },
     {
-        "prompt": "Year Einstein Received his Nobel Prize for the Photoelctric Effect",
-        "answer": "1922",
-        "hint": "Year he RECEIVED the Prize"
+        "prompt": "How Much Does a Baseball Weigh?",
+        "answer": "5",
+        "hint": "Take the Low End, use Ounces. Do Not Include a Unit"
     },
     {
-        "prompt": "Compliment of the Color Associated with Mars",
-        "answer": "Green",
-        "hint": "Use a Color Wheel"
+        "prompt": "What is Connecticuts State Bird",
+        "answer": "Robin",
+        "hint": "Blue Eggs?"
+    },
+    {
+        "prompt": "Brand of 3D Printers in This Room",
+        "answer": "Makerbot",
+        "hint": "Generic School Brand"
     },
     {
         "prompt": "What Document was Ratified the Year of the Architectural Height of the One WTC?",
@@ -65,19 +70,14 @@
         "hint": "Architectural Height"
     },
     {
-        "prompt": "Axis an Airplane will Rotate on to Descend",
-        "answer": "Tilt",
-        "hint": "Yaw, Pan, or Tilt"
-    },
-    {
         "prompt": "Melting Point of Substance Marcus Crassus Died Drinking",
         "answer": "1064",
         "hint": "Celsius, Whole Number, No Units"
     },
     {
-        "prompt": "https://content.bartleby.com/tbms-images/9781337614085/Chapter-P/images/14085-p.3-17e-question-digital_image001.jpg",
-        "answer": "7.5",
-        "hint": "Line Segment GH * Line Segment EF , No Units, Exact Answer"
+        "prompt": "On A Weekday, When Does the Amtrak 451 Train Arrive in Hartford",
+        "answer": "5:43 AM",
+        "hint": "Include 'AM' in your Answer"
     },
     {
         "prompt": "What Planet is the Valence Electrons of Sulfur From the Sun",
