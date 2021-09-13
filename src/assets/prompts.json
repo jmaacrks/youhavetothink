@@ -5,11 +5,6 @@
         "hint": "Worked in Obama Admin"
     },
     {
-        "prompt": "Hartford Chamber of Commerce Address",
-        "answer": "31 Pratt Street, 5th Floor Hartford, CT 06103",
-        "hint": "Include Floor Number and Zip Code"
-    },
-    {
         "prompt": "Is The Lunch Here Bad?",
         "answer": "Yes",
         "hint": "You Can Be Honest"
@@ -48,6 +43,11 @@
         "prompt": "What Weighs More, a Kilogram of Feathers, or a Pound of Rocks?",
         "answer": "Feathers",
         "hint": "'Feathers', or 'Rocks'"
+    },
+    {
+        "prompt": "Hartford Chamber of Commerce Address",
+        "answer": "31 Pratt Street, 5th Floor Hartford, CT 06103",
+        "hint": "Include Floor Number and Zip Code"
     },
     {
         "prompt": "How Much Does a Baseball Weigh?",
