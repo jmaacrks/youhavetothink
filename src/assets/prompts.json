@@ -10,7 +10,7 @@
         "hint": "You Can Be Honest"
     },
     {
-        "prompt": "Hartford Area",
+        "prompt": "Hartford Area in Square Miles",
         "answer": "17.95",
         "hint": "in square miles, don't include a unit"
     },
